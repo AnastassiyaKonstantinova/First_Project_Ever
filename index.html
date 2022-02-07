@@ -1,20 +1,51 @@
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
-		<title>First Project Ever</title>
+		<title>Form Validator</title>
 	</head>
 	<body>
-		<div class="container" id="container">
-			<h1>Button clicker</h1>
-			<p class="first_paragraph">this is my first button</p>
-			<p>click the button how many times you want</p>
-			<button id="button">click me perfect stranger</button>
-			<p>you click the button this many times</p>
-			<p id="times clicked">0</p>
+		<div class="container">
+			<form id="form" class="form">
+				<h2>Register With Us</h2>
+				<div class="form-control">
+					<label for="username">Username</label>
+					<input type="text" id="username" placeholder="Enter username" />
+					<small>Error message</small>
+				</div>
+				<div class="form-control">
+					<label for="email">Email</label>
+					<input type="text" id="email" placeholder="Enter Email" />
+					<small>Error message</small>
+				</div>
+				<div class="form-control">
+					<label for="password">Password</label>
+					<input type="password" id="password" placeholder="Enter Password" />
+					<small>Error message</small>
+				</div>
+				<div class="form-control">
+					<label for="password2">Confirm Password</label>
+					<input
+						type="password"
+						id="password2"
+						placeholder="Enter Password again"
+					/>
+				</div>
+				<div class="form-control">
+					<label for="add-comments">Add your comments:</label>
+					<textarea id="add-comments" name="add-comments" rows="4" cols="40">
+Here you can add your comments or ask questions upon registration!</textarea
+					>
+				</div>
+				<small class="form-control">Error message</small>
+				<button>Submit</button>
+			</form>
+			<a href="./pages/addOn.html">Go to addOn</a>
 		</div>
+
+		<script src="../scripts/script.js"></script>
 	</body>
-	<script src="script.js"></script>
 </html>
